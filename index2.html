@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>slider</title>
+  </head>
+  <style >
+    .slider {
+      width: 750px;
+      overflow: hidden;
+      margin: auto;
+    }
+
+    .slides {
+      width: calc(750px * 3);
+      animation: glisse 10s infinite;
+    }
+
+    .slide {
+      float: left;
+    }
+
+    @keyframes glisse {
+      0% {
+        transform: translateX(0);
+      }
+      20% {
+        transform: translateX(0);
+      }
+      33% {
+        transform: translateX(-750px);
+      }
+      50% {
+        transform: translateX(-750px);
+      }
+      66% {
+        transform: translateX(-1500px);
+      }
+      90% {
+        transform: translateX(-1500px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  </style>
+
+  <body>
+    <div class="slider" >
+
+      <div class="slides">
+        <div class="slide">
+          <img src="images/Photo d'ensemble_result.jpg" alt="Calzone">
+        </div>
+
+        <div class="slide">
+          <img src="images/Calzone_result.jpg" alt="Tacos">
+        </div>
+
+        <div class="slide">
+          <img src="images/Tacos_result.jpg" alt="Calzone">
+        </div>
+
+    </div>
+  </body>
+</html>

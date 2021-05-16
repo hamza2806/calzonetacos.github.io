@@ -1,0 +1,87 @@
+html {
+  background-color: #256256256;
+  font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high  */
+  font-family: 'Roboto Slab', serif;
+}
+
+
+.slider {
+  width: 750px;
+  height: 500px;
+  overflow: hidden;
+  margin: auto auto 150px;
+}
+
+.slides {
+  width: calc(750px * 8);
+  animation: glisse 20s infinite;
+}
+
+.slide {
+  float: left;
+}
+
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
+  }
+  6% {
+    transform: translateX(0);
+  }
+  12% {
+    transform: translateX(-750px);
+  }
+  18% {
+    transform: translateX(-750px);
+  }
+  24% {
+    transform: translateX(-1500px);
+  }
+  30% {
+    transform: translateX(-1500px);
+  }
+  36% {
+    transform: translateX(-2250px);
+  }
+  42% {
+    transform: translateX(-2250px);
+  }
+  48% {
+    transform: translateX(-3000px);
+  }
+  54% {
+    transform: translateX(-3000px);
+  }
+  60% {
+    transform: translateX(-3750px);
+  }
+  66% {
+    transform: translateX(-3750px);
+  }
+  72% {
+    transform: translateX(-4500px);
+  }
+  78% {
+    transform: translateX(-4500px);
+  }
+  84% {
+    transform: translateX(-5250px);
+  }
+  90% {
+    transform: translateX(-5250px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+img {
+ width: 750px;
+ max-height: 500px;
+}
+/*
+.slide-caption {
+  position: fixed;
+  top: 50px;
+
+} */
